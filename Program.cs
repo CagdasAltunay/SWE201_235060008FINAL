@@ -17,11 +17,15 @@ namespace LibraryApp
             Console.WriteLine("Library Books:");
             library.ListBooks();
 
+            Console.WriteLine($"\nTotal books: {library.GetBookCount()}");
+
             Console.WriteLine("\nBorrowing '1984'...");
             library.BorrowBook("1984");
 
             Console.WriteLine("\nUpdated Book List:");
             library.ListBooks();
+
+            Console.WriteLine($"\nTotal books: {library.GetBookCount()}");
         }
     }
 }
