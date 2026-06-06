@@ -10,7 +10,10 @@ namespace LibraryApp
             Name = name;
             MemberId = memberId;
         }
+
+        public override string ToString()
+        {
+            return $"{Name} (ID: {MemberId})";
+        }
     }
 }
-
-
